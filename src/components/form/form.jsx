@@ -42,8 +42,8 @@ const Form = () => {
     } else {
       const contact = { id: nanoid(), ...data };
       dispatch(aadContacts(contact));
+      reset();
     }
-    reset();
   };
 
   const reset = () => {
